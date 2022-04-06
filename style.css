@@ -10,7 +10,7 @@ body{
 #logo a{
     color: black;
     text-decoration: none;
-    font-size: 4vw;   
+    font-size: 2vw;   
 }
 
 #scrolly {
@@ -121,8 +121,8 @@ figure img{
 you want to quickly test how this works on your computer, just make your 
 browser window really skinny */
 @media screen and (max-width: 800px) {
-    #logo{
-        font-size: 20px;
+    #logo a{
+        font-size: 3vw;
     }   
 }
 
