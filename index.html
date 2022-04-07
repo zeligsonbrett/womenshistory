@@ -93,7 +93,7 @@
             
         <figure id="figure-1">
             
-           <img id="imageid" class="starter" src="image5.png"> 
+           <img id="imageid" alt="newspaper clipping background image" class="starter" src="image5.png"> 
            <div id="fader"></div>
         </figure>
   
@@ -540,7 +540,7 @@
       
         if(!document.getElementById("imageid").classList.contains("starter")) {
             document.getElementById("fader").style.opacity=1;
-            const myTimeout = setTimeout(fadeout, 600);
+            const myTimeout = setTimeout(fadeout, 500);
         }
         else document.getElementById("imageid").classList.remove("starter")
         
