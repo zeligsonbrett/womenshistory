@@ -44,7 +44,6 @@ figure {
   z-index: 0;
   background-color: none;
   text-align: center;
-  
 }
 
 .step {
@@ -116,6 +115,10 @@ figure img{
   text-decoration: underline;
 }
 
+.credits{
+  font-size: 2vw; 
+  text-align: center;
+}
 
 /* sets different rules for narrower screens (usually meaning mobile) If
 you want to quickly test how this works on your computer, just make your 
@@ -138,4 +141,27 @@ browser window really skinny */
   .step p {
     font-size: 4vw;
   }
+
+  .credits{
+    font-size: 4vw; 
+  }
+
+  .step{
+    width: 200px;
+  }
+
+  figure img{
+    position: absolute;
+    height: 100vh;
+    width: 97vw;
+    left: -20px;
+    top: -175px;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .intro p{
+    font-size: 4.5vw;
+  }
+}
+
