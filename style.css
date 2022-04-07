@@ -52,6 +52,8 @@ figure {
   background-color: none;
   color: #fff;
   transition: ease;
+  padding-top: 150px;
+  z-index: 200;
 }
 
 .step:last-child {
@@ -92,15 +94,17 @@ figure img{
 
 .intro{
   margin: 2vw;
+  text-align: left;
 }
 
 .intro h1{
-  font-size: 10vw;
+  font-size: 9vw;
   line-height: 100%;
+  margin-left: 8%;
 }
 
 .intro p{
-  font-size: 2.25vw;
+  font-size: 1.6vw;
   margin-left: 4vw;
   margin-right: 4vw;
   margin-top: 30px;
@@ -120,6 +124,31 @@ figure img{
   text-align: center;
 }
 
+#fader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: ease-in 0.5s;
+
+}
+
+.fade-in {
+  animation-name: fader;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  z-index: 20;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
+}
+
 /* sets different rules for narrower screens (usually meaning mobile) If
 you want to quickly test how this works on your computer, just make your 
 browser window really skinny */
@@ -127,6 +156,10 @@ browser window really skinny */
     #logo a{
         font-size: 3vw;
     }   
+
+    .intro p{
+      font-size: 2.6vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -135,7 +168,7 @@ browser window really skinny */
   }
 
   .intro h1{
-    font-size: 11vw;
+    font-size: 10vw;
   }
 
   .step p {
@@ -162,6 +195,27 @@ browser window really skinny */
 @media screen and (max-width: 600px) {
   .intro p{
     font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .indent{
+    display: none;
+  }
+  
+  .intro h1{
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 14vw;
+  }
+
+  .intro p{
+    font-size: 5vw;
+  }
+
+  .step p{
+    font-size: 5vw;
   }
 }
 
