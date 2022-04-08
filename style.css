@@ -227,10 +227,15 @@ browser window really skinny */
 
   .intro p{
     font-size: 5vw;
+    line-height: 150%;
   }
 
   .step p{
     font-size: 5vw;
+  }
+
+  .intro .byline{
+    font-size: 6vw;
   }
 }
 
